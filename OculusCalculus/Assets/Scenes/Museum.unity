@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 52372312}
   m_Layer: 0
-  m_Name: ' Corridor'
+  m_Name: Corridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,6 +319,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RayCone: {fileID: 1400151222}
+  RayCollider: {fileID: 1131407613}
+  RayStart: {x: 0, y: 0, z: 0}
+  RayCtrl: {x: 0, y: 0, z: 0}
+  RayDirection: {x: 0, y: 0, z: 0, w: 0}
+  CtrlPt: {x: 0, y: 0, z: 0}
+  PlayerController: {fileID: 0}
+  RightHand: {fileID: 0}
+  MyCollider: {fileID: 0}
 --- !u!4 &63779204
 Transform:
   m_ObjectHideFlags: 0
@@ -2457,7 +2465,7 @@ Transform:
   m_GameObject: {fileID: 1131407613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 63779204}
   m_RootOrder: 1
@@ -2492,7 +2500,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 944feb076639a4d39b750e3cb5d7dfab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2953,7 +2961,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 944feb076639a4d39b750e3cb5d7dfab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2981,7 +2989,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400151222}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: c28fa8d61f81fb742b1180a6d4516625, type: 3}
 --- !u!4 &1400151225
 Transform:
   m_ObjectHideFlags: 0
@@ -2991,7 +2999,7 @@ Transform:
   m_GameObject: {fileID: 1400151222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 2, z: 0.05}
+  m_LocalScale: {x: 0.01, y: 2, z: 0.01}
   m_Children: []
   m_Father: {fileID: 63779204}
   m_RootOrder: 0

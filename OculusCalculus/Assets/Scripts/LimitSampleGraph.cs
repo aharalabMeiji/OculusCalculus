@@ -25,7 +25,13 @@ public class LimitSampleGraph : MonoBehaviour
         stepR = MaxR / DivR;
         stepT = MaxT / DivT;
         MyMesh = new Mesh();
-        GraphNumber = 0;
+        switch (MuseumPlayer.ContentNumber)
+        {
+            case 27: GraphNumber = 0; break;
+            case 28: GraphNumber = 1; break;
+            default: GraphNumber = 2; break;
+
+        }
         MakeMeshData();
 
     }
